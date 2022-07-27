@@ -109,7 +109,7 @@ const Stores = ({ brands_09, brands_A, brands_B, brands_C, brands_D, brands_E, b
                 brands = brands_Z
               }
               return (
-                <div id={item} className='bg-white border-b-2'>
+                <div key={item?._id} id={item} className='bg-white border-b-2'>
                   <div className='w-full p-6'>
                     <h1 className='text-gray-500 text-3xl'>{item}</h1>
                   </div>
@@ -224,8 +224,8 @@ const Stores = ({ brands_09, brands_A, brands_B, brands_C, brands_D, brands_E, b
                     <div className='md:col-span-4'>
                       {brands[5]?.merchantname && (
                         <div className='flex items-center'>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                           </svg>
                           <Link href={`/coupons/${brands[5]?.slug}`}>
                             <a><p className='text-indigo-400'>{brands[5]?.merchantname}</p></a>
@@ -235,8 +235,8 @@ const Stores = ({ brands_09, brands_A, brands_B, brands_C, brands_D, brands_E, b
 
                       {brands[6]?.merchantname && (
                         <div className='flex items-center'>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                           </svg>
                           <Link href={`/coupons/${brands[6]?.slug}`}>
                             <a><p className='text-indigo-400'>{brands[6]?.merchantname}</p></a>
@@ -246,8 +246,8 @@ const Stores = ({ brands_09, brands_A, brands_B, brands_C, brands_D, brands_E, b
 
                       {brands[7]?.merchantname && (
                         <div className='flex items-center'>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                           </svg>
                           <Link href={`/coupons/${brands[7]?.slug}`}>
                             <a><p className='text-indigo-400'>{brands[7]?.merchantname}</p></a>
@@ -261,8 +261,8 @@ const Stores = ({ brands_09, brands_A, brands_B, brands_C, brands_D, brands_E, b
 
                       {brands[8]?.merchantname && (
                         <div className='flex items-center'>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                           </svg>
                           <Link href={`/coupons/${brands[8]?.slug}`}>
                             <a><p className='text-indigo-400'>{brands[8]?.merchantname}</p></a>
@@ -272,8 +272,8 @@ const Stores = ({ brands_09, brands_A, brands_B, brands_C, brands_D, brands_E, b
 
                       {brands[9]?.merchantname && (
                         <div className='flex items-center'>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                           </svg>
                           <Link href={`/coupons/${brands[9]?.slug}`}>
                             <a><p className='text-indigo-400'>{brands[9]?.merchantname}</p></a>
@@ -283,8 +283,8 @@ const Stores = ({ brands_09, brands_A, brands_B, brands_C, brands_D, brands_E, b
 
                       {brands[10]?.merchantname && (
                         <div className='flex items-center'>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                           </svg>
                           <Link href={`/coupons/${brands[10]?.slug}`}>
                             <a><p className='text-indigo-400'>{brands[10]?.merchantname}</p></a>
@@ -298,8 +298,8 @@ const Stores = ({ brands_09, brands_A, brands_B, brands_C, brands_D, brands_E, b
 
                       {brands[11]?.merchantname && (
                         <div className='flex items-center'>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                           </svg>
                           <Link href={`/coupons/${brands[11]?.slug}`}>
                             <a><p className='text-indigo-400'>{brands[11]?.merchantname}</p></a>
@@ -309,8 +309,8 @@ const Stores = ({ brands_09, brands_A, brands_B, brands_C, brands_D, brands_E, b
 
                       {brands[12]?.merchantname && (
                         <div className='flex items-center'>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                           </svg>
                           <Link href={`/coupons/${brands[12]?.slug}`}>
                             <a><p className='text-indigo-400'>{brands[12]?.merchantname}</p></a>
@@ -320,8 +320,8 @@ const Stores = ({ brands_09, brands_A, brands_B, brands_C, brands_D, brands_E, b
 
                       {brands[13]?.merchantname && (
                         <div className='flex items-center'>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                           </svg>
                           <Link href={`/coupons/${brands[13]?.slug}`}>
                             <a><p className='text-indigo-400'>{brands[13]?.merchantname}</p></a>
@@ -333,7 +333,7 @@ const Stores = ({ brands_09, brands_A, brands_B, brands_C, brands_D, brands_E, b
                   </div>
                   <div className='flex justify-center items-center pb-10'>
                     <Link href={`/stores/${item}`}>
-                      <a><p className='text-indigo-400'>All shops with "{item}"</p></a>
+                      <a><p className='text-indigo-400'>All shops with &qout;{item}&qout;</p></a>
                     </Link>
                   </div>
                 </div>
