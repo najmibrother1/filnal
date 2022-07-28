@@ -1,5 +1,5 @@
-import BrandsInfo from "../../models/BrandsInfo";
-import connectDb from "../../middleware/mongoose";
+import BrandsInfo from "../../models/BrandsInfo.js";
+import connectDb from "../../middleware/mongoose.js";
 
 const handler = async (req, res) => {
   if (req.method == "POST") {
